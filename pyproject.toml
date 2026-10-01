@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ram-tool"
+version = "1.0.5"
+description = "A command-line tool to fetch RAM value from an API and manage authenticated HTTP requests."
+readme = "README.md"
+authors = [
+    { email = "dodi66412@gmail.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "requests>=2.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/hhj061540-lang/ram_tool"
+Repository = "https://github.com/hhj061540-lang/ram_tool.git"
+
+[project.scripts]
+ram-tool = "ram_tool.cli:main"
